@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* variáveis css */
+
+:root {
+
+    --header-height: 3rem;
+
+    /*  color */
+
+    --first-color: #fca4a6;
+    --first-color-dark: #c1576a;
+    --first-color-darken: #a83e51;
+    --white-color: #fcf8f8;
+
+    /* fonte e tipografia  */
+
+    --body-font: 'roboto',sans-serif;
+    --big-font-size:2.5rem;
+    --normal-font-size: .938rem;
+
+   /*  z index */
+    --z-fixed:100;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 5rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: var(--header-height)000;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+h1,p,ul{
+    margin:0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--first-color);
+
+}
