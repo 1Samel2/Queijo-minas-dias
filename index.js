@@ -9,3 +9,13 @@ const navMenu = document.getElementById('nav-menu'),
     closeMenu.addEventListener('click', ()=>{
         navMenu.classList.remove('show')
     })
+
+    document.addEventListener('mousemove', move)
+
+    function move(e){
+        this.querySelectorALL('.move').forEach(layer =>{
+            const speed = layer.getaAttribute('data-speed')
+
+            const x = (window.i)
+        })
+    }
