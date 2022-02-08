@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 /* variáveis css */
 
 :root {
@@ -26,6 +27,10 @@
 }
 
 
+
+html {
+    scroll-behavior: smooth;
+}
 
 @media screen and (min-width: 768px) {
     :root {
@@ -196,15 +201,16 @@ img {
 
 .home-button {
     display: inline-block;
-    background-color: var(--first-color-dark);
+    background-color: var(--first-color-dark); 
     color: var(--white-color);
     padding: 1.125rem 4rem;
     border-radius: .5rem;
+   
 }
 
-.home-button:hover {
-    background-color: var(--first-color-darken)
-}
+ .home-button:hover {
+  opacity: 0.7;
+} 
 
 @media screen and (min-width: 768px) {
     body {
@@ -364,8 +370,18 @@ img {
 .conhecimentos-img-wrapper img {
     object-fit: cover;
     width: 100%;
+    animation:  img-queijo infinite 10s linear;
 }
 
+
+@keyframes img-queijo {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
 /* Contato */
 
 .sessao-contato {
@@ -390,6 +406,7 @@ img {
     background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-katerina-holmes-5907901-removebg-preview.png);
     background-size: cover;
 }
+
 
 .contato-right {
     width: 65%;
@@ -436,6 +453,10 @@ img {
     max-height: 3rem;
 }
 
+button:hover{
+    opacity: 1;
+}
+
 
 
 .field:focus~label {
@@ -469,6 +490,7 @@ footer {
     align-items: center;
 }
 
+  
 .footer-content {
     width: 60%;
     display: flex;
@@ -480,5 +502,5 @@ footer {
     color: white;
     font-size: 1.2rem;
 }
-
+/* test */
 
