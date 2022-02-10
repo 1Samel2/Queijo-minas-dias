@@ -57,6 +57,7 @@ h1,
 p,
 ul {
     margin: 0;
+    font-size: 1.2rem;
 }
 
 ul {
@@ -248,8 +249,8 @@ img {
         width: 375px;
     }
 
-    .conhecimentos{
-       display: block;
+    .conhecimentos {
+        display: block;
     }
 
 
@@ -257,326 +258,335 @@ img {
 }
 
 
-    @media screen and (min-width: 1024px) {
-        .bd-grid {
-            margin-left: auto;
-            margin-right: auto;
-        }
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .home-container {
-            justify-content: initial;
-            column-gap: 4.5rem;
-        }
+    .home-container {
+        justify-content: initial;
+        column-gap: 4.5rem;
+    }
 
-        .home-img {
-            width: 604px;
-            height: 466px;
-        }
+    .home-img {
+        width: 604px;
+        height: 466px;
+    }
 
-        .home-img img {
-            width: 604px;
-        }
+    .home-img img {
+        width: 604px;
+    }
 
-        .sessao-contato {
-            width: 100px;
-            padding: 0;
-            left: 0;
-        }
-        
-
-
+    .sessao-contato {
+        width: 100px;
+        padding: 0;
+        left: 0;
     }
 
 
 
+}
 
-    /*  Segunda div */
 
+
+
+/*  Segunda div */
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(6, 6rem);
+    row-gap: .5rem;
+}
+
+
+.conhecimento:nth-child(1) {
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(2) {
+    grid-column: 3 / 8;
+    grid-row: 3 / 6;
+}
+
+.conhecimento:nth-child(3) {
+    grid-column: 12 / 15;
+    grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(4) {
+    grid-column: 11 / 14;
+    grid-row: 1 / 5;
+}
+
+
+.sessao-conhecimento {
+    background-color: var(--secondary--color);
+
+
+}
+
+.sessao-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: var(--secondary--color);
+}
+
+.sessao-header h1 {
+    font-family: "roboto", serif;
+    font-size: 3rem;
+    color: black;
+    border-bottom: solid 3px #0d882f;
+    background-color: var(--secondary--color);
+}
+
+.conhecimento-header {
+    display: flex;
+    align-items: center;
+    color: black;
+
+}
+
+.conhecimento-header {
+    font-size: 2.5rem;
+}
+
+.conhecimento-header h3 {
+    font-family: "roboto", serif;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.conhecimento-text {
+    font-family: "roboto", serif;
+    margin-top: 1rem;
+}
+
+
+.conhecimentos-img-wrapper {
+    grid-column: 7 / 11;
+    grid-row: 2 / 6;
+    width: 100%;
+}
+
+.conhecimentos-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    /* animation: img-queijo infinite 10s linear; */
+}
+
+@media screen and (max-width: 768px) {
     .conhecimentos {
-        display: grid;
-        grid-template-columns: repeat(16, 1fr);
-        grid-template-rows: repeat(6, 6rem);
-        row-gap: .5rem;
+        display: block;
     }
 
-  
-    .conhecimento:nth-child(1) {
-        grid-column: 4 / 7;
-        grid-row: 1 / 3;
-    }
+    .conhecimentos-img-wrapper img {
+        width: 70%;
+      
 
-    .conhecimento:nth-child(2) {
-        grid-column: 3 / 8;
-        grid-row: 3 / 6;
     }
-
-    .conhecimento:nth-child(3) {
-        grid-column: 12 / 15;
-        grid-row: 3 / 5;
-    }
-
-    .conhecimento:nth-child(4) {
-        grid-column: 11 / 14;
-        grid-row: 1 / 5;
-    }
-
 
     .sessao-conhecimento {
-        background-color: var(--secondary--color);
-
-
+        background-color: #f5f5f5;
     }
 
     .sessao-header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5rem;
-        background-color: var(--secondary--color);
+        background-color: #f5f5f5;
     }
 
     .sessao-header h1 {
-        font-family: "roboto", serif;
-        font-size: 3rem;
-        color: black;
-        border-bottom: solid 3px #0d882f;
-        background-color: var(--secondary--color);
-    }
-
-    .conhecimento-header {
-        display: flex;
-        align-items: center;
-        color: black;
-
-    }
-
-    .conhecimento-header {
-        font-size: 2.5rem;
+        background-color: #f5f5f5;
     }
 
     .conhecimento-header h3 {
-        font-family: "roboto", serif;
-        font-size: 2rem;
-        padding-left: 1rem;
+        padding-left: 4.3rem ;
+
     }
 
-    .conhecimento-text {
-        font-family: "roboto", serif;
-        margin-top: 1rem;
+   
+
+
+}
+
+
+
+@keyframes img-queijo {
+    from {
+        transform: rotate(0deg);
     }
 
+    to {
+        transform: rotate(360deg);
+    }
+}
 
-     .conhecimentos-img-wrapper {
-        grid-column: 7 / 11;
-        grid-row: 2 / 6;
+/* Contato */
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-katerina-holmes-5907901-removebg-preview.png);
+    background-size: cover;
+}
+
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "roboto", serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: "roboto", serif;
+    border-bottom: 2px dashed #818181;
+    height: 2rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-group textarea {
+    padding-top: 0.1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+
+
+.field:focus~label {
+    top: 0;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    width: 15rem;
+    height: 2.5rem;
+    background-color: var(--first-color-dark);
+    font-family: "roboto", serif;
+    font-size: 1.5rem;
+    color: #eee;
+    border-radius: 1.3rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .sessao-contato {
         width: 100%;
-    } 
-
-    .conhecimentos-img-wrapper img {
-        object-fit: cover;
-        width: 100%;
-        /* animation: img-queijo infinite 10s linear; */
+        background-color: #f5f5f5;
     }
-
-    @media screen and (max-width: 768px){
-        .conhecimentos{
-            display: block;
-        }
-       
-        .conhecimentos-img-wrapper img {
-            width: 70%;
-            margin: center;
-
-        }
-
-        .sessao-conhecimento{
-            background-color: #f5f5f5;
-        }
-
-        .sessao-header{
-            background-color: #f5f5f5;
-        }
-
-        .sessao-header h1{
-            background-color: #f5f5f5;
-        }
-
-    }
-
-
-
-    @keyframes img-queijo {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    /* Contato */
-
-     .sessao-contato {
-        width: 100%;
-        height: 100vh;
-        background-color: var(--secondary--color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-    } 
-
 
     .contato-wrapper {
-        width: 60%;
-        height: 30rem;
-        display: flex;
-        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+        width: 80%;
+
     }
 
     .contato-left {
-        width: 35%;
-        background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-katerina-holmes-5907901-removebg-preview.png);
-        background-size: cover;
+        width: 100%;
     }
-
 
     .contato-right {
-        width: 65%;
-        background-color: #eee;
-        padding: 1rem 3rem 3rem 3rem;
-
-    }
-
-    .sessao-contato h1 {
         width: 100%;
-        text-align: center;
-        font-family: "roboto", serif;
-        color: black;
-        font-size: 3rem;
-        font-weight: lighter;
-    }
 
-    .sessao-contato form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .input-group {
-        position: relative;
-    }
+        width: 80%;
 
-    .field {
-        background: transparent;
-        border: none;
-        width: 20rem;
-        font-size: 1.5rem;
-        font-family: "roboto", serif;
-        border-bottom: 2px dashed #818181;
-        height: 2rem;
-        outline: none;
-        margin: 2rem 0;
     }
 
     .input-group textarea {
-        padding-top: 0.1rem;
-        max-width: 25rem;
-        max-height: 3rem;
+        width: 14rem;
     }
 
-    button:hover {
-        opacity: 1;
-    }
-
-
-
-    .field:focus~label {
-        top: 0;
-        font-size: 1rem;
+    .field {
+        width: 14rem;
     }
 
     .btn-submit {
-        width: 15rem;
-        height: 2.5rem;
-        background-color: var(--first-color-dark);
-        font-family: "roboto", serif;
-        font-size: 1.5rem;
-        color: #eee;
-        border-radius: 1.3rem;
-        border: none;
-        box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
-        cursor: pointer;
-    }
+        width: 80%;
 
-    @media screen and (max-width: 768px){
-        .sessao-contato{
-            width: 100%;
-            background-color: #f5f5f5;
-        }
-
-        .contato-wrapper{
-            width: 80%;
-           
-        }
-        .contato-left{
-           width: 100%;
-        }
-        .contato-right{
-            width: 100%;
-           
-        }
-        .input-group{
-            width: 80%;
-           
-        }
-
-        .input-group textarea{
-            width: 14rem;
-        }
-        .field{
-            width: 14rem;
-        }
-
-        .btn-submit{
-            width: 80%;
-            
-        }
-
-
-     
     }
 
 
 
-
-    /* bara com copilate  */
-
-
-    footer {
-        width: 100%;
-        height: 6rem;
-        background-color: var(--first-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+}
 
 
-    .footer-content {
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .footer-content p {
-        font-family: "roboto", serif;
-        color: white;
-        font-size: 1.2rem;
-    }
 
-    /* test */
+/* bara com copilate  */
 
-   
+
+footer {
+    width: 100%;
+    height: 6rem;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: "roboto", serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
