@@ -23,10 +23,10 @@ function move(e) {
         const y = (window.innerHeight - e.pageY * speed) / 120
 
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-    })}
+    })
+}
 
- 
-    function comprarAlert (){
-        swal("Entregas somente em Governador Valadares")}
-          
-            
+alert.swal('oooo')
+
+
+
