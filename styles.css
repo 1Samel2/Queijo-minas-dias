@@ -75,6 +75,8 @@ img {
 }
 
 
+
+
 .bd-grid {
     max-width: 1024px;
     display: grid;
@@ -174,7 +176,7 @@ img {
     position: absolute;
     top: 0;
     left: -30px;
-
+    width: 65%: 
 }
 
 
