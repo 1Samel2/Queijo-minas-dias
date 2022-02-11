@@ -112,8 +112,8 @@ img {
         width: 70%;
         height: 100%;
         padding: 3.5rem 1.5rem 0;
-        background: rgb(54 49 49 / 30%);
-        backdrop-filter: blur(10px);
+        background: rgb(7 118 67 / 30%);
+        backdrop-filter: blur(10px); 
         transition: .5s;
     }
 
@@ -364,17 +364,16 @@ img {
 
 .conhecimento-text {
     font-family: "roboto", serif;
-    margin-top: 1rem;
+    margin-top: -1.2rem;
     margin-left: 20px; 
 }
 
 
 .conhecimentos-img-wrapper {
-    grid-column: 7 / 11;
+    grid-column: 8 / 11;
     grid-row: 2 / 6;
-    width: 100%;
-    margin: 0 0 0 42px;
-    margin-top: -50px
+    width: 300px;
+    
 }
 
 .conhecimentos-img-wrapper img {
@@ -413,7 +412,6 @@ img {
 
 
 
-
 }
 
 
@@ -445,12 +443,12 @@ img {
     width: 60%;
     height: 30rem;
     display: flex;
-    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2rem 3rem rgba(white, 0, 0, 0.);
 }
 
 .contato-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-katerina-holmes-5907901-removebg-preview.png);
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-nastyasensei-821365.jpg);
     background-size: cover;
 }
 
