@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+/*/@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 /* variáveis css */
 
 :root {
@@ -126,7 +126,7 @@ img {
     right: 1rem;
     font-size: 1.5rem;
     cursor: pointer;
-}
+} 
 
 .nav-item {
     margin-bottom: 2rem;
