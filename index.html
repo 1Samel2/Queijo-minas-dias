@@ -106,34 +106,42 @@
     <section class="sessao-contato" id="contato">
         <div class="contato-wrapper">
             <div class="contato-left"></div>
+            <!-- sessão formulário para caso alguém queira entrar em contato comigo, preencher o formulário  -->
             <div class="contato-right">
                 <h1>Contato</h1>
-                <form action="https://formsubmit.co/samuelsguedes1009@gmail.com" method="POST" target="_blank">
+                <form>
                     <div class="input-group">
-                        <input type="text" class="field" placeholder="Nome" id="name" required>
+                        <input type="text" class="field" placeholder="Nome" id="name">
+                        <!-- fiz o formulário de uma forma que eu consiga deixar uma imagem ao lado -->
                     </div>
                     <div class="input-group">
-                        <input type="text" class="field" placeholder="E-mail" id="email" required>
+                        <input type="text" class="field" placeholder="E-mail" id="email">
+                        <!--  o elemento Form serve para formulário, input para digitar as informações de contato  -->
                     </div>
                     <div class="input-group">
-                        <textarea type="text" class="field" placeholder="Mensagem" id="text" required></textarea>
+                        <textarea type="text" class="field" placeholder="Mensagem" id="text"></textarea>
+                        <!--  textarea para eu escrever um texto ou o que quiser dentro  -->
                     </div>
                     <button type="submit" class="btn-submit">Enviar</button>
+                    <!-- botão type submit serve para enviar os dados preenchido -->
                 </form>
             </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>Copyright &copy; 2021, Anísio Pereira da Rocha - Todos os diretos reservados </p>
-        </div>
-    
-    </footer>
-
-
-
-
+</section>       
+<footer>
+            <div class="footer-content"> <!-- esse é um footer que tem em quase todos os sites que é o rodapé  -->
+                <div class="divContent">
+                    <p class="paragraph">Minhas rede sociais</p>
+                    <a href="https://www.instagram.com/invites/contact/?i=10sg1hldkp7se&utm_content=571bkd0"><img
+                            class="img" src="./assets/instagram-white.svg" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/samuel-guedes12/"><img class="img"
+                            src="./assets/linkedin-white.svg" alt="linkedin"></a>
+                    <a href="https://wa.me/qr/BQ4VQBZQACITB1"><img class="img" src="./assets/whatsapp-alt-white.svg"
+                            alt="whatsapp"></a>
+                    <a href="https://github.com/1Samel2"><img class="img" src="./assets/github-white.svg" alt="github"></a>
+                </div>
+            </div>
+        </footer>
 </body>
 <script src="./index.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>

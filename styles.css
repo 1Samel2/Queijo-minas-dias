@@ -435,132 +435,119 @@ img {
 
 .sessao-contato {
     width: 100%;
-    height: 100vh;
-    background-color: var(--secondary--color);
+    height: 700px;
+    background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
 
 .contato-wrapper {
     width: 60%;
     height: 30rem;
     display: flex;
-    box-shadow: 0 2rem 3rem rgba(white, 0, 0, 0.);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 .contato-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(./IMG/pexels-nastyasensei-821365.jpg);
-     background-size: cover; 
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(assets/contato.jpg);
+    background-size: cover;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .contato-wrapper {
+        width: 94%;
+        height: 400px;
+    }
+
+    .contato-right {
+        width: 80%;
+    }
+
+    .contato-left {
+        width: 70%;
+    }
 }
 
 
 .contato-right {
-    width: 65%;
-    background-color: #eee;
-    padding: 1rem 3rem 3rem 3rem;
-
-}
-
-.sessao-contato h1 {
     width: 100%;
     text-align: center;
-    font-family: "roboto", serif;
-    color: black;
-    font-size: 3rem;
-    font-weight: lighter;
 }
 
-.sessao-contato form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contato-right h1 {
+    margin-top: 25px;
+    font-family: "Muli", serif;
 }
 
 .input-group {
-    position: relative;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .field {
-   background: transparent; 
-    border: none;
-    width: 20rem;
-    font-size: 1.5rem;
-    font-family: "roboto", serif;
-    border-bottom: 2px dashed #818181; 
-    height: 2rem;
-    outline: none;
-    margin: 2rem 0;
+    border: 0;
+    border-bottom: 1px dashed #818181;
+    width: 60%;
+    background-color: #f5f5f5;
 }
 
-.input-group textarea {
-    padding-top: 0.1rem;
+textarea {
     max-width: 25rem;
-    max-height: 3rem;
+    max-height: 2rem;
 }
 
-button:hover {
-    opacity: 1;
+input::placeholder {
+    font-size: 1.4rem;
+    font-family: "josefin Slab", serif;
 }
 
+textarea::placeholder {
+    font-size: 1.5rem;
+    font-family: "josefin Slab", serif;
+}
 
-
-.field:focus~label {
-    top: 0;
-    font-size: 1rem;
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
 .btn-submit {
-    width: 15rem;
-    height: 2.5rem;
-    background-color: var(--first-color-dark);
-    font-family: "roboto", serif;
-    font-size: 1.5rem;
-    color: #eee;
-    border-radius: 1.3rem;
-    border: none;
-    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+    margin-top: 50px;
+    width: 60%;
+    height: 40px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    background: #0d882f;
+}
+
+.footer-content {
+    background-color: #0d882f;
+
+}
+
+.divContent {
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
     cursor: pointer;
 }
 
-/* @media screen and (max-width: 768px) {
-
-    .sessao-contato{
-        background-color:#f5f5f5;
-        width: 100%;
-        height: 100%;
-   
-
-} */
-
-
-
-/* bara com copilate  */
-
-
-
-footer {
-    width: 100%;
-    height: 6rem;
-    background-color: var(--first-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.footer-content {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-content p {
-    font-family: "roboto", serif;
+.paragraph {
+    font-family: "Muli", serif;
     color: white;
     font-size: 1.2rem;
 }
