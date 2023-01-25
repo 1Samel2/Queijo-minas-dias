@@ -30,5 +30,5 @@ function sendEmail() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
-    window.location.href = "fazendadaspalmeirass@gmail.com?subject=" + name + "&body=" + message + "From :" + email;
+    window.location.href = "mailto:fazendadaspalmeirass@gmail.com?subject=" + name + "&body=" + message + "From :" + email;
   }
