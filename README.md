@@ -7,10 +7,4 @@
 <!-- ABOUT THE PROJECT -->
 <h2> :pencil: Sobre o projeto</h2>
 <img src="./IMG/Captura da Web_6-2-2023_122214_.jpeg" alt=""/>
-<br>
-<br>
-<h2 align="justify">
-    Projeto de faculdade
-</h2>
-
 <p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="-----------------------------------------------------" /></p>
